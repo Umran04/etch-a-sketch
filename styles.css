@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#container{
+    border: solid 3px black;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+
+    
+}
+
+.box{
+    border: solid blue 1px;
+    background-color: lawngreen;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+}
