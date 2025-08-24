@@ -1,35 +1,19 @@
 body{
+    border: black 1px solid;
+    margin: 0px;
+    height: 925px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    align-items: center; 
     justify-content: center;
-    border: 1px solid black;
-    height: 725px;
-    margin: auto;
-     
-    
-}
-
-#btns{
-
+    align-items: center;
 }
 
 #container{
-    border: solid 3px black;
-    background-color: brown;
+    width: 600px;
+    height: 600px;
+    border: black solid 1px;
     display: flex;
-    flex-wrap: wrap;
-    width: 400px;
+    flex-wrap:wrap;
     
-
     
-}
-
-.box{
-    border: solid blue 1px;
-    background-color: lawngreen;
-    width: 25px;
-    height: 25px;
-    box-sizing: border-box;
 }
