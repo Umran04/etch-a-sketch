@@ -3,6 +3,8 @@ const resizeBtn = document.getElementById('resize')
 
 let n = 16;
 
+
+
 resizeBtn.addEventListener('click', () => {
      n = prompt('Enter a number between 2 and 64')
     while(n < 2 || n > 64){
@@ -10,25 +12,38 @@ resizeBtn.addEventListener('click', () => {
         n = prompt('Enter a number between 2 and 64')
     }
 
+    createGrid(n);
+
 })
 
 
-let grid = n * n;
-let widthAndHeight = 600 / n;
 
 
 
-for (let i = 0; i < grid; i++){
-    const box = document.createElement('div');
-    box.classList.add('box');
 
-    box.style.width = `${widthAndHeight}px`
-    box.style.height = `${widthAndHeight}px`
-    //box.style.background = 'red'
-    box.style.boxSizing = 'border-box'
 
-    div.appendChild(box)
+
+function createGrid(n){
+
+    div.innerHTML = ''
     
+    let grid = n * n;
+    let widthAndHeight = 600 / n;
+
+    for (let i = 0; i < grid; i++){
+        const box = document.createElement('div');
+        box.classList.add('box');
+
+        box.style.width = `${widthAndHeight}px`
+        box.style.height = `${widthAndHeight}px`
+        box.style.background = 'red'
+        box.style.border = 'solid'
+        box.style.boxSizing = 'border-box'
+
+        div.appendChild(box)
+    }
     
 }
+
+createGrid(n);
 
