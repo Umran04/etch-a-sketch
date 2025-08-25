@@ -19,10 +19,7 @@ resizeBtn.addEventListener('click', () => {
 
 })
 
-
-
-
-
+eraseBtn.addEventListener()
 
 
 function createGrid(n){
@@ -52,12 +49,7 @@ function createGrid(n){
         
         })
 
-        eraseBtn.addEventListener('click', () => {
-            addEventListener('mouseenter', () => {
-                box.style.backgroundColor = 'white'
-            })
-        
-        })
+       
 
         div.appendChild(box)
     }
