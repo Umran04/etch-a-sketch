@@ -12,6 +12,11 @@ body{
 #btns{
     display: flex;
     gap: 20px;
+    
+}
+
+.box:hover{
+    /*add animation*/
 }
 
 #container{
