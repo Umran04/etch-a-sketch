@@ -1,5 +1,8 @@
 const div = document.getElementById('container');
 const resizeBtn = document.getElementById('resize')
+const clearBtn = document.getElementById('clear')
+const rainbowBtn = document.getElementById('rainbow')
+const eraseBtn = document.getElementById('eraser')
 
 let n = 16;
 
@@ -18,11 +21,6 @@ resizeBtn.addEventListener('click', () => {
 
 
 
-
-
-
-
-
 function createGrid(n){
 
     div.innerHTML = ''
@@ -36,14 +34,22 @@ function createGrid(n){
 
         box.style.width = `${widthAndHeight}px`
         box.style.height = `${widthAndHeight}px`
-        box.style.background = 'red'
-        box.style.border = 'solid'
+        //box.style.background = 'red'
+        box.style.border = 'solid 1px'
         box.style.boxSizing = 'border-box'
+        box.addEventListener('mouseenter', () => {
+            box.style.backgroundColor = 'black' 
+        })
+
+        
+
+       
 
         div.appendChild(box)
     }
     
 }
+
 
 createGrid(n);
 
