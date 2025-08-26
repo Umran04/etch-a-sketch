@@ -7,24 +7,46 @@ body{
     justify-content: center;
     align-items: center;
     gap: 25px;
+    background-color: #87CEEB;
+}
+
+h1{
+    color: goldenrod;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: "Kristi", cursive;
 }
 
 #btns{
     display: flex;
-    gap: 20px;
+    gap: 20px; 
+}
+
+button {
+    color: goldenrod;
+    width: 100px;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: aliceblue;
     
 }
 
-.box:hover{
-    /*add animation*/
+button:hover{
+    cursor: pointer;
+    opacity: 90%;
+    width: 125px;
 }
+
+
+
 
 #container{
     width: 600px;
     height: 600px;
-    border: black solid 1px;
     display: flex;
     flex-wrap:wrap;
+    background-color: white;
     
     
 }

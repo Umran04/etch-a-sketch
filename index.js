@@ -59,7 +59,7 @@ function createGrid(n){
         
         box.style.width = `${widthAndHeight}px`
         box.style.height = `${widthAndHeight}px`
-        //box.style.border = 'solid 1px'
+        box.style.border = 'solid 1px lightgrey'
         box.style.boxSizing = 'border-box'
 
         box.addEventListener('mouseenter', () => {
@@ -80,14 +80,7 @@ function createGrid(n){
             box.style.backgroundColor = 'white'
         })
 
-    
-        
-
-        
-
-       
-
-        div.appendChild(box)
+    div.appendChild(box)
     }
 
     
